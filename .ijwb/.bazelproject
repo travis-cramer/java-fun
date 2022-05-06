@@ -1,0 +1,26 @@
+directories:
+  .
+  src/main/com/fun/handlers
+  src/main/com/fun/messages
+  src/main/com/fun/server
+  src/test/com/fun/handlers
+  .ijwb
+
+# Automatically includes all relevant targets under the 'directories' above
+derive_targets_from_directories: true
+
+targets:
+  # If source code isn't resolving, add additional targets that compile it here
+  //src/main/com/fun/server:Main
+  //src/main/com/fun/messages:messages
+  //src/main/com/fun/messages:testMessages
+  //src/main/com/fun/handlers:handlers
+  //src/test/com/fun/handlers:MyHttpHandlerTest
+
+additional_languages:
+  # Uncomment any additional languages you want supported
+  # android
+  # dart
+  # kotlin
+  # python
+  # scala
